@@ -1,5 +1,62 @@
+@import "./reset.css";
+
+html,
+body {
+    overflow: hidden;
+}
+
+.sections {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #FFE15C;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullscreen-section {
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: RED; /* Cor de fundo da sua seção */
+    /* Outros estilos para a sua seção */
+}
+
+.fullscreen-section-2 {
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: BLUE; /* Cor de fundo da sua seção */
+    /* Outros estilos para a sua seção */
+}
+
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+main {
+    background-color: #FFE15C;
+    color: #333;
 }
 
 ::-webkit-scrollbar-thumb {
