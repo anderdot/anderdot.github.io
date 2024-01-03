@@ -1,62 +1,85 @@
 @import "./reset.css";
 
-html,
-body {
-    overflow: hidden;
-}
-
 .sections {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
 .section {
     scroll-snap-align: start;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    &.section--presentation {
+        background-color: #FFE15C;
+    }
+
+    &.section--biography {
+        background-color: #F5F5F5;
+    }
+
+    &.section--trajectory {
+        background-color: #F5F5F5;
+    }
+
+    &.section--knowledge {
+        background-color: #F5F5F5;
+    }
+
+    &.section--projects {
+        background-color: #F5F5F5;
+    }
+
+    &.section--contact {
+        background-color: #FFE15C;
+    }
 }
 
 nav {
-    background-color: #000;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    height: 5em;
+    width: 100vw;
+    padding: 0 1em;
+    text-transform: uppercase;
 }
 
 nav a {
-    color: #FFE15C;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4em;
+    align-items: center;
+}
+
+ul li a {
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 9em 0.4em;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #000;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-}
-
-.fullscreen-section {
-    height: 100vh; /* 100% da altura da viewport */
-    background-color: RED; /* Cor de fundo da sua seção */
-    /* Outros estilos para a sua seção */
-}
-
-.fullscreen-section-2 {
-    height: 100vh; /* 100% da altura da viewport */
-    background-color: BLUE; /* Cor de fundo da sua seção */
-    /* Outros estilos para a sua seção */
+    margin-top: 0.4em;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-}
-
-main {
-    background-color: #FFE15C;
-    color: #333;
 }
 
 ::-webkit-scrollbar-thumb {
