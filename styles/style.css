@@ -17,30 +17,18 @@
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+}
 
-    &.section--presentation {
-        background-color: #FFE15C;
-    }
+.section--presentation,
+.section--contact {
+    background-color: #ffe15c;
+}
 
-    &.section--biography {
-        background-color: #F5F5F5;
-    }
-
-    &.section--trajectory {
-        background-color: #F5F5F5;
-    }
-
-    &.section--knowledge {
-        background-color: #F5F5F5;
-    }
-
-    &.section--projects {
-        background-color: #F5F5F5;
-    }
-
-    &.section--contact {
-        background-color: #FFE15C;
-    }
+.section--biography,
+.section--trajectory,
+.section--knowledge,
+.section--projects {
+    background-color: #f5f5f5;
 }
 
 nav {
@@ -56,19 +44,15 @@ nav {
 
 nav a {
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 3.6em;
     align-items: center;
+    color: #2e2e2e;
 }
 
 ul li a {
     font-weight: lighter;
     font-size: 1em;
     margin: 9em 0.4em;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
 }
 
 ul {
@@ -83,9 +67,42 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FFE15C;
+    background-color: #ffe15c;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #FFF;
+    background-color: #fff;
+}
+
+.burger-menu {
+    font-size: 1.5em;
+    display: none;
+    margin-top: 0.8em;
+    color: #2e2e2e;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 3.2em;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin-right: 0.9em;
+        text-align: right;
+    }
+
+    .burger-menu {
+        display: block;
+    }
 }
