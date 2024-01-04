@@ -12,6 +12,7 @@
     width: 100vw;
     min-height: 100vh;
     align-items: stretch;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,6 +41,8 @@ nav {
     width: 100vw;
     padding: 0 1.2em;
     text-transform: uppercase;
+    top: 0;
+    z-index: 2;
 }
 
 nav a {
@@ -47,12 +50,14 @@ nav a {
     font-size: 3.6em;
     align-items: center;
     color: #2e2e2e;
+    text-decoration: none;
 }
 
 ul li a {
     font-weight: lighter;
     font-size: 1em;
     margin: 9em 0.8em;
+    text-decoration: none;
 }
 
 ul li a:hover {
@@ -68,9 +73,14 @@ ul {
 }
 
 img {
-    position:static;
+    position: absolute;
     bottom: 0;
-    max-width: 57.8vw;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 30%;
 }
 
 ::-webkit-scrollbar {
