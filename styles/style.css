@@ -67,6 +67,12 @@ ul {
     margin-top: 0.4em;
 }
 
+img {
+    position:static;
+    bottom: 0;
+    max-width: 57.8vw;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
