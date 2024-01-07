@@ -111,7 +111,7 @@ li a:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -130,6 +130,10 @@ li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
     .nav-list {
         display: none;
         flex-direction: column;
