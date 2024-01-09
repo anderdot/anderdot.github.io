@@ -40,5 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     sectionContainer.addEventListener('scroll', getBackgroundColor);
+    window.addEventListener('scroll', getBackgroundColor);
     window.addEventListener('load', getBackgroundColor);
+    window.addEventListener('resize', getBackgroundColor);
+    window.addEventListener('orientationchange', getBackgroundColor);
 });
