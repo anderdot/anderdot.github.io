@@ -34,7 +34,7 @@
 }
 
 nav {
-    background-color: transparent;
+    background-color: var(--bg-active, transparent);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -48,8 +48,7 @@ nav {
 
 nav a {
     font-weight: normal;
-    font-size: 3.6em;
-    align-items: center;
+    font-size: 5em;
     color: #2e2e2e;
     text-decoration: none;
 }
@@ -140,10 +139,9 @@ li a:hover {
         position: absolute;
         top: 3.2em;
         right: 10px;
-        max-width: 50%;
         width: 100%;
-        background-color: var(--bg-active);
-        border: 1px solid #2e2e2e;
+        background-color: var(--bg-active, #ffe15c);
+        border-bottom: 1px solid #2e2e2e;
         z-index: 1;
     }
 
@@ -152,9 +150,9 @@ li a:hover {
     }
 
     .nav-list li {
-        margin-right: 0.9em;
+        margin-right: -6px;
         margin-top: 0.7em;
-        text-align: right;
+        text-align: center;
     }
 
     .nav-list li:last-child {
@@ -163,6 +161,16 @@ li a:hover {
 
     .burger-menu {
         display: block;
+    }
+
+    nav a {
+        font-size: 3.4em;
+        margin-top: 0.1em;
+    }
+
+    li a {
+        font-size: 1.2em;
+        margin: 0.5em 0.8em;
     }
 
     .content {
