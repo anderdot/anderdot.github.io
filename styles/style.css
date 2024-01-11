@@ -10,7 +10,7 @@
 
 .section {
     scroll-snap-align: start;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     align-items: stretch;
     position: relative;
@@ -57,7 +57,6 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-top: 0.4em;
 }
 
 li a {
