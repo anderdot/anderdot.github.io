@@ -151,7 +151,6 @@ li a:hover {
 
     .burger-menu {
         display: block;
-        cursor: pointer;
         z-index: 2;
     }
 
