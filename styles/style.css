@@ -139,11 +139,11 @@ li a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: -8px;
         left: 0;
         background-color: #ffe15c;
-        z-index: 1;
         overflow-y: auto;
+        z-index: 1;
     }
 
     .burger-menu {
@@ -153,25 +153,22 @@ li a:hover {
 
     .nav-list.show {
         display: flex;
+        justify-content: center;
+        gap: 4.5em;
     }
 
     .nav-list li {
-        margin-top: 0.7em;
         text-align: center;
-    }
-
-    .nav-list li:last-child {
-        margin-bottom: 0.7em;
     }
 
     nav a {
         font-size: 3.4em;
-        margin-top: 0.1em;
     }
 
     li a {
-        font-size: 1.2em;
-        margin: 0.5em 0.8em;
+        font-size: 2em;
+        margin-top: 2em;
+        margin-right: 0;
     }
 
     .content {
