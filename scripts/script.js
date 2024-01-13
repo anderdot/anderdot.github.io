@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('resize', updateStyles);
-    
+
     function updateStyles() {
         const scrollbarStyle = document.getElementById('scrollbarStyle');
         const shouldRemoveStyle = window.innerWidth < 767;
