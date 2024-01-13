@@ -56,21 +56,28 @@ nav a {
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    margin-top: 0.5em;
+    justify-content: space-around;
+}
+
+li {
+    text-align: center;
+    margin: 0.5em;
 }
 
 li a {
     font-weight: lighter;
     font-size: 1em;
-    margin-right: 1em;
+    display: block;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 li a:hover {
     border-bottom: 1px solid #2e2e2e;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.6em;
+}
+
+a.active {
+    font-weight: bold;
 }
 
 .content {
@@ -139,7 +146,7 @@ li a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: -8px;
+        top: 0;
         left: 0;
         background-color: #ffe15c;
         overflow-y: auto;
@@ -167,8 +174,6 @@ li a:hover {
 
     li a {
         font-size: 2em;
-        margin-top: 2em;
-        margin-right: 0;
     }
 
     .content {
