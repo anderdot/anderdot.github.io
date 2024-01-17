@@ -133,24 +133,26 @@ li a:hover {
         width: 6px;
     }
 
-    .nav,
     .nav-list {
-        width: calc(100% - 6px);
+        width: 100vw;
+        min-height: 100vh;
     }
 
     .nav-list {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 3.2em;
-        right: 3px;
-        background-color: transparent;
-        border-bottom: 1px solid #2e2e2e;
+        top: 0;
+        left: 0;
+        background-color: #ffe15c;
         z-index: 1;
+        overflow-y: auto;
     }
 
-    .nav-blur {
-        backdrop-filter: blur(15px);
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
     }
 
     .nav-list.show {
@@ -164,10 +166,6 @@ li a:hover {
 
     .nav-list li:last-child {
         margin-bottom: 0.7em;
-    }
-
-    .burger-menu {
-        display: block;
     }
 
     nav a {
