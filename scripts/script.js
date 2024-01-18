@@ -2,22 +2,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const burgerMenu = document.getElementById('burgerButton');
     const navList = document.querySelector('.nav-list');
 
-    burgerMenu.addEventListener('click', toggleMenu);
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', scrollToSection);
+    burgerMenu.addEventListener('click', function () {
+        toggleMenu();
+        toggleBurgerIcon();
+    });
+
+    document.querySelectorAll('.nav-list a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            navList.classList.remove('show');
+            toggleBurgerIcon();
+        });
     });
 
     function toggleMenu() {
         navList.classList.toggle('show');
-        toggleBurgerIcon();
-    }
-
-    function scrollToSection(e) {
-        e.preventDefault();
-        const targetSection = document.querySelector(this.getAttribute('href'));
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-        navList.classList.remove('show');
-        toggleBurgerIcon();
     }
 
     function toggleBurgerIcon() {
