@@ -108,7 +108,7 @@ li a:hover {
     font-weight: 600;
 }
 
-::-webkit-scrollbar {
+#scrollbarStyle::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -128,10 +128,6 @@ li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-    ::-webkit-scrollbar {
-        width: 6px;
-    }
-
     .nav-list {
         width: 100vw;
         min-height: 100vh;
