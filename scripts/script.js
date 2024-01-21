@@ -25,4 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
         burgerMenu.classList.toggle('close');
         burgerMenu.innerHTML = burgerMenu.classList.contains('close') ? '&#10005;' : '&#9776;';
     }
+
+    window.addEventListener('resize', updateStyles);
+    
+    function updateStyles() {
+        const scrollbarStyle = document.getElementById('scrollbarStyle');
+        const shouldRemoveStyle = window.innerWidth < 767;
+
+        scrollbarStyle.innerHTML = shouldRemoveStyle ? '' : '::-webkit-scrollbar { width: 8px; }';
+    }
+
+    updateStyles();
 });
