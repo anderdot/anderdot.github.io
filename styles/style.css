@@ -57,13 +57,15 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin-top: 0.5em;
 }
 
 li a {
     font-weight: lighter;
     font-size: 1em;
-    margin: 9em 0.8em;
+    margin-right: 1em;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 li a:hover {
