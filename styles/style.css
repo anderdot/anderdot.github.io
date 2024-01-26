@@ -117,7 +117,7 @@ a.active {
     font-weight: 600;
 }
 
-#scrollbarStyle::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -160,8 +160,8 @@ a.active {
 
     .nav-list.show {
         display: flex;
-        justify-content: center;
-        gap: 4.5em;
+        justify-content: space-around;
+        padding-top: 3em;
     }
 
     .nav-list li {
