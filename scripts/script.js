@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = sectionContainer.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-list a');
 
+    var typed = new Typed('.typing', {
+        strings: [
+            'Dolor sit amet',
+            'Consectetur adipiscing elit',
+            'Sed do eiusmod tempor',
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+    });
+
     burgerMenu.addEventListener('click', function () {
         toggleMenu();
         toggleBurgerIcon();
