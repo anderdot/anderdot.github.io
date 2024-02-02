@@ -89,7 +89,7 @@ a.active {
     align-items: stretch;
 }
 
-.content img:not(.social img){
+.content img:not(.social img) {
     position: absolute;
     bottom: 0;
     object-fit: cover;
@@ -152,6 +152,36 @@ a.active {
     display: none;
     margin-top: 0.8em;
     color: #2e2e2e;
+}
+
+.typed-cursor {
+    opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 767px) {
